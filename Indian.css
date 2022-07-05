@@ -1,0 +1,268 @@
+@font-face {
+    font-family: "Product Sans Regular";
+    src: url(Product\ Sans\ Regular.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans Bold";
+    src: url(Product\ Sans\ Bold.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans Italic";
+    src: url(Product\ Sans\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "Product Sans Bold Italic";
+    src: url(Product\ Sans\ Bold\ Italic.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 110px;
+    top: 0px;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+#logo img {
+
+    height: 100px;
+    width: 100px;
+    padding: 0px;
+}
+
+#logo1 img {
+    height: 100px;
+    width: 100px;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 30px;
+    font-size: 25px;
+    transition: all 0.2s ease-in-out;
+}
+
+#navbar ul {
+    display: flex;
+    padding-right: 100px;
+    justify-content: center;
+    font-family: Product Sans Regular;
+    list-style: none;
+}
+
+#navbar ul li a:hover {
+    color: blueviolet;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+#home::before {
+    content: ' ';
+    position: absolute;
+    background: url("wap4.png") no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-family: Product Sans Regular;
+    font-size: 50px;
+    color: rgb(102, 21, 21);
+}
+
+#home p {
+    font-family: Product Sans Regular;
+    font-size: 25px;
+    margin-top: 50px;
+    text-align: center;
+    color: rgb(102, 21, 21);
+}
+
+#homew::before {
+    content: ' ';
+    position: absolute;
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.1));
+    z-index: -3;
+    top: 110px;
+    left: 0px;
+    width: 100%;
+    height: 1000px;
+    opacity: 0.9;
+}
+
+#home button {
+    font-family: Product Sans Regular;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 20px;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 330px;
+}
+
+#home button:hover {
+    cursor: pointer;
+    background-color: rgb(214, 66, 66);
+}
+
+#form {
+    position: relative;
+}
+
+#form::before {
+    content: " ";
+    position: absolute;
+    background-image: linear-gradient(to left, rgba(226, 172, 172, 0.9), rgba(255, 255, 255, 0.0)), url('6069453.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#form h1 {
+    font-family: Product Sans Regular;
+    font-size: 75px;
+    text-align: right;
+    padding-top: 300px;
+    margin-bottom: 150px;
+    margin-right: 18%;
+}
+
+#form1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form label {
+    font-family: Product Sans Regular;
+    width: 100%;
+    margin-left: 60%;
+    font-size: 40px;
+
+}
+
+#form input {
+    font-family: Product Sans Regular;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 40px;
+    border-radius: 15px;
+    margin-left: 60%;
+    /* margin-left: 70%; */
+}
+
+#form input:hover{
+    background-color: antiquewhite;
+}
+#form button {
+    font-family: Product Sans Regular;
+    background-color: rgba(255, 0, 0);
+    display: block;
+    float: right;
+    margin-top: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-bottom: 300px;
+    padding: 10px;
+}
+
+#form button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 0,0,0.5);
+}
+#services{
+    background-image: linear-gradient(rgb(162, 162, 221),white);
+}
+#services .primary {
+    font-family: Product Sans Regular;
+    font-size: 50px;
+
+    padding: 100px 0px;
+
+
+    text-align: center;
+}
+
+#ser {
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(251, 255, 255);
+    flex-direction: row;
+}
+
+#services .box img {
+    height: 400px;
+    width: 400px;
+    padding: 50px 85px;
+    border-radius: 50%;
+}
+#services .box h2{
+    font-family: Product Sans Regular;
+    text-align: center;
+    font-size: 30px;
+}
+#services .box p{
+    font-family: Product Sans Regular;
+    text-align: center;
+    padding: 10px;
+}
+#services .box:hover{
+    background-color: antiquewhite;
+}
+footer {
+    font-family: Product Sans Regular;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
